@@ -2711,3 +2711,995 @@ Processing by MoviesController#index as HTML
   [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
   Rendered layouts/_footer.html.erb (3.3ms)
 Completed 200 OK in 442ms (Views: 429.7ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/movies/2" for 10.0.2.2 at 2015-07-22 01:42:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.6) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/movies/2" for 10.0.2.2 at 2015-07-22 01:42:37 +0000
+  [1m[35mActiveRecord::SchemaMigration Load (1.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.6) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentPosterToMovies (20150722012104)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (4.6ms)[0m  [1mALTER TABLE "movies" ADD "poster_file_name" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "movies" ADD "poster_content_type" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "movies" ADD "poster_file_size" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "movies" ADD "poster_updated_at" datetime
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150722012104"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+Migrating to RemovePosterImageUrlFromMovies (20150722014529)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.9ms)[0m  CREATE TEMPORARY TABLE "amovies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "director" varchar(255), "runtime_in_minutes" integer, "description" text, "poster_image_url" varchar(255), "release_date" datetime, "created_at" datetime, "updated_at" datetime, "poster_file_name" varchar(255), "poster_content_type" varchar(255), "poster_file_size" integer, "poster_updated_at" datetime) 
+  [1m[36m (2.1ms)[0m  [1mSELECT * FROM "movies"[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "amovies" ("id","title","director","runtime_in_minutes","description","poster_image_url","release_date","created_at","updated_at","poster_file_name","poster_content_type","poster_file_size","poster_updated_at") VALUES (1, 'The Avengers', 'Joss Whedon', 143, 'Earth''s mightiest Heroes', 'http://www.impawards.com/2012/posters/avengers.jpg', '2012-05-04 00:00:00.000000', '2015-07-22 00:02:29.106013', '2015-07-22 00:02:29.106013', NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "amovies" ("id","title","director","runtime_in_minutes","description","poster_image_url","release_date","created_at","updated_at","poster_file_name","poster_content_type","poster_file_size","poster_updated_at") VALUES (2, 'Captain America The Winter Soldier', 'Russo Brothers', 136, 'Captain America, Black Widow, and Falcon join forces to uncover a conspiracy within S.H.I.E.L.D. while facing a mysterious assassin known as the Winter Soldier.', 'http://www.impawards.com/2014/posters/captain_america_the_winter_soldier_ver7.jpg', '2014-04-04 00:00:00.000000', '2015-07-22 00:13:27.241162', '2015-07-22 00:13:27.241162', NULL, NULL, NULL, NULL)[0m
+  [1m[35m (5.9ms)[0m  DROP TABLE "movies"
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "director" varchar(255), "runtime_in_minutes" integer, "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime, "poster_file_name" varchar(255), "poster_content_type" varchar(255), "poster_file_size" integer, "poster_updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "amovies"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "movies" ("id","title","director","runtime_in_minutes","description","release_date","created_at","updated_at","poster_file_name","poster_content_type","poster_file_size","poster_updated_at") VALUES (1, 'The Avengers', 'Joss Whedon', 143, 'Earth''s mightiest Heroes', '2012-05-04 00:00:00.000000', '2015-07-22 00:02:29.106013', '2015-07-22 00:02:29.106013', NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "movies" ("id","title","director","runtime_in_minutes","description","release_date","created_at","updated_at","poster_file_name","poster_content_type","poster_file_size","poster_updated_at") VALUES (2, 'Captain America The Winter Soldier', 'Russo Brothers', 136, 'Captain America, Black Widow, and Falcon join forces to uncover a conspiracy within S.H.I.E.L.D. while facing a mysterious assassin known as the Winter Soldier.', '2014-04-04 00:00:00.000000', '2015-07-22 00:13:27.241162', '2015-07-22 00:13:27.241162', NULL, NULL, NULL, NULL)
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "amovies"[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150722014529"]]
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_movie_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reviews_on_user_id' AND type='index'
+
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 01:55:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.1ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (102.8ms)
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (83.9ms)
+Completed 200 OK in 982ms (Views: 911.8ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:55:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+
+Started GET "/posters/original/missing.png" for 10.0.2.2 at 2015-07-22 01:55:13 +0000
+
+ActionController::RoutingError (No route matches [GET] "/posters/original/missing.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.2ms)
+
+
+Started GET "/movies/1" for 10.0.2.2 at 2015-07-22 01:55:21 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (2.1ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.4ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mReview Load (1.2ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered movies/show.html.erb within layouts/application (48.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 420ms (Views: 407.6ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/posters/original/missing.png" for 10.0.2.2 at 2015-07-22 01:55:22 +0000
+
+ActionController::RoutingError (No route matches [GET] "/posters/original/missing.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.5ms)
+
+
+Started GET "/movies/1/edit" for 10.0.2.2 at 2015-07-22 01:55:23 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (1.8ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/_form.html.erb (42.3ms)
+  Rendered movies/edit.html.erb within layouts/application (73.7ms)
+Completed 500 Internal Server Error in 145ms
+
+ActionView::Template::Error (undefined local variable or method `multipart' for #<#<Class:0xb608a8ac>:0xafbb418>):
+    1: <%= form_for @movie, :html => {multipart => true} do |f| %>
+    2:   <% if @movie.errors.any? %>
+    3:     <div>
+    4:       <%= pluralize(@movie.errors.count, "error") %> prevented this movie from being submitted:
+  app/views/movies/_form.html.erb:1:in `_app_views_movies__form_html_erb___690613055_91991270'
+  app/views/movies/edit.html.erb:4:in `_app_views_movies_edit_html_erb___465034465_92131070'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.2ms)
+
+
+Started GET "/movies/1/edit" for 10.0.2.2 at 2015-07-22 01:55:24 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (1.9ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/_form.html.erb (29.4ms)
+  Rendered movies/edit.html.erb within layouts/application (50.4ms)
+Completed 500 Internal Server Error in 110ms
+
+ActionView::Template::Error (undefined local variable or method `multipart' for #<#<Class:0xb608a8ac>:0xb5e3023c>):
+    1: <%= form_for @movie, :html => {multipart => true} do |f| %>
+    2:   <% if @movie.errors.any? %>
+    3:     <div>
+    4:       <%= pluralize(@movie.errors.count, "error") %> prevented this movie from being submitted:
+  app/views/movies/_form.html.erb:1:in `_app_views_movies__form_html_erb___690613055__621791478'
+  app/views/movies/edit.html.erb:4:in `_app_views_movies_edit_html_erb___465034465__621741238'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.5ms)
+
+
+Started GET "/movies/1/edit" for 10.0.2.2 at 2015-07-22 01:55:59 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (1.8ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/_form.html.erb (53.2ms)
+  Rendered movies/edit.html.erb within layouts/application (71.7ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 436ms (Views: 431.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:00 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:01 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:01 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:01 +0000
+
+
+Started PATCH "/movies/1" for 10.0.2.2 at 2015-07-22 01:56:21 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RLltm2pPksuy3Lzufki5UC1llXWvG/xZLd3nbHk6hDo=", "movie"=>{"title"=>"The Avengers", "release_date"=>"2012-05-04", "director"=>"Joss Whedon", "runtime_in_minutes"=>"143", "description"=>"Earth's mightiest Heroes", "poster"=>#<ActionDispatch::Http::UploadedFile:0xb17eafc @tempfile=#<Tempfile:/tmp/RackMultipart20150722-7456-q8z7dn>, @original_filename="Captain_America_The_Winter_Soldier.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"Captain_America_The_Winter_Soldier.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit", "id"=>"1"}
+  [1m[35mMovie Load (2.1ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameters: poster
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `poster_image_url' for #<Movie:0xb1621f4>):
+  app/controllers/movies_controller.rb:32:in `update'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/movies/1/edit" for 10.0.2.2 at 2015-07-22 01:56:54 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (2.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/_form.html.erb (2.4ms)
+  Rendered movies/edit.html.erb within layouts/application (33.8ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 449ms (Views: 444.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:55 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:55 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:55 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:56:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:55 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:56 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:56 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:56 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:56:56 +0000
+
+
+Started PATCH "/movies/1" for 10.0.2.2 at 2015-07-22 01:57:09 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RLltm2pPksuy3Lzufki5UC1llXWvG/xZLd3nbHk6hDo=", "movie"=>{"title"=>"The Avengers", "release_date"=>"2012-05-04", "director"=>"Joss Whedon", "runtime_in_minutes"=>"143", "description"=>"Earth's mightiest Heroes", "poster"=>#<ActionDispatch::Http::UploadedFile:0xbbb7b7c @tempfile=#<Tempfile:/tmp/RackMultipart20150722-7456-15ynid3>, @original_filename="captain_america_the_winter_soldier_ver7.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"captain_america_the_winter_soldier_ver7.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit", "id"=>"1"}
+  [1m[36mMovie Load (2.1ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 32ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/movies_controller.rb:32:in `update'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started PATCH "/movies/1" for 10.0.2.2 at 2015-07-22 01:57:25 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RLltm2pPksuy3Lzufki5UC1llXWvG/xZLd3nbHk6hDo=", "movie"=>{"title"=>"The Avengers", "release_date"=>"2012-05-04", "director"=>"Joss Whedon", "runtime_in_minutes"=>"143", "description"=>"Earth's mightiest Heroes", "poster"=>#<ActionDispatch::Http::UploadedFile:0xb40cc24 @tempfile=#<Tempfile:/tmp/RackMultipart20150722-7456-iq0ugx>, @original_filename="captain_america_the_winter_soldier_ver7.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"captain_america_the_winter_soldier_ver7.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit", "id"=>"1"}
+  [1m[35mMovie Load (1.9ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 7ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/movies_controller.rb:32:in `update'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/movies/1/edit" for 10.0.2.2 at 2015-07-22 01:57:30 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (1.4ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/_form.html.erb (3.0ms)
+  Rendered movies/edit.html.erb within layouts/application (24.0ms)
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_footer.html.erb (24.1ms)
+Completed 200 OK in 427ms (Views: 420.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:57:31 +0000
+
+
+Started PATCH "/movies/1" for 10.0.2.2 at 2015-07-22 01:57:39 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RLltm2pPksuy3Lzufki5UC1llXWvG/xZLd3nbHk6hDo=", "movie"=>{"title"=>"The Avengers", "release_date"=>"2012-05-04", "director"=>"Joss Whedon", "runtime_in_minutes"=>"143", "description"=>"Earth's mightiest Heroes", "poster"=>#<ActionDispatch::Http::UploadedFile:0xbc94130 @tempfile=#<Tempfile:/tmp/RackMultipart20150722-7456-2j92b4>, @original_filename="captain_america_the_winter_soldier_ver7.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"captain_america_the_winter_soldier_ver7.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit", "id"=>"1"}
+  [1m[36mMovie Load (2.4ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 34ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/movies_controller.rb:32:in `update'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/movies/1/edit" for 10.0.2.2 at 2015-07-22 01:58:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (2.4ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/_form.html.erb (77.4ms)
+  Rendered movies/edit.html.erb within layouts/application (110.1ms)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (93.5ms)
+Completed 200 OK in 913ms (Views: 834.3ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:58:51 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:58:51 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:58:51 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:58:51 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:58:52 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:58:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:58:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:58:52 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:58:52 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:58:52 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:58:52 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:58:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:58:52 +0000
+
+
+Started PATCH "/movies/1" for 10.0.2.2 at 2015-07-22 01:59:04 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RLltm2pPksuy3Lzufki5UC1llXWvG/xZLd3nbHk6hDo=", "movie"=>{"title"=>"The Avengers", "release_date"=>"2012-05-04", "director"=>"Joss Whedon", "runtime_in_minutes"=>"143", "description"=>"Earth's mightiest Heroes", "poster"=>#<ActionDispatch::Http::UploadedFile:0xb628f88c @tempfile=#<Tempfile:/tmp/RackMultipart20150722-7490-1xk9d01>, @original_filename="avengers.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"avengers.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit", "id"=>"1"}
+  [1m[35mMovie Load (2.0ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 8ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/movies_controller.rb:32:in `update'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.1ms)
+
+
+Started GET "/movies/1/edit" for 10.0.2.2 at 2015-07-22 01:59:44 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (1.9ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered movies/_form.html.erb (2.6ms)
+  Rendered movies/edit.html.erb within layouts/application (24.2ms)
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 413ms (Views: 407.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:44 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:44 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:44 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:45 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:45 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:45 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:45 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:45 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:45 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:45 +0000
+
+
+Started PATCH "/movies/1" for 10.0.2.2 at 2015-07-22 01:59:51 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RLltm2pPksuy3Lzufki5UC1llXWvG/xZLd3nbHk6hDo=", "movie"=>{"title"=>"The Avengers", "release_date"=>"2012-05-04", "director"=>"Joss Whedon", "runtime_in_minutes"=>"143", "description"=>"Earth's mightiest Heroes", "poster"=>#<ActionDispatch::Http::UploadedFile:0xb5e480e4 @tempfile=#<Tempfile:/tmp/RackMultipart20150722-7490-1wzxumb>, @original_filename="avengers.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"avengers.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit", "id"=>"1"}
+  [1m[36mMovie Load (1.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 36ms
+
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  app/controllers/movies_controller.rb:32:in `update'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/movies/1/edit" for 10.0.2.2 at 2015-07-22 02:01:57 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (1.9ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/_form.html.erb (4.3ms)
+  Rendered movies/edit.html.erb within layouts/application (33.6ms)
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (28.6ms)
+Completed 200 OK in 454ms (Views: 445.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 02:01:57 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 02:01:57 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 02:01:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 02:01:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 02:01:58 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 02:01:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 02:01:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 02:01:58 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 02:01:58 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 02:01:58 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 02:01:58 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 02:01:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 02:01:58 +0000
+
+
+Started PATCH "/movies/1" for 10.0.2.2 at 2015-07-22 02:02:03 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RLltm2pPksuy3Lzufki5UC1llXWvG/xZLd3nbHk6hDo=", "movie"=>{"title"=>"The Avengers", "release_date"=>"2012-05-04", "director"=>"Joss Whedon", "runtime_in_minutes"=>"143", "description"=>"Earth's mightiest Heroes", "poster"=>#<ActionDispatch::Http::UploadedFile:0xa2fcb78 @tempfile=#<Tempfile:/tmp/RackMultipart20150722-7490-cbdipy>, @original_filename="avengers.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"avengers.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit", "id"=>"1"}
+  [1m[35mMovie Load (1.7ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/tmp/90eb7723a657b6597100aafef171d9f220150722-7490-gzm54j.jpg'
+Command :: file -b --mime '/tmp/90eb7723a657b6597100aafef171d9f220150722-7490-m2opn9.jpg'
+Binary data inserted for `string` type on column `poster_content_type`
+  [1m[35mSQL (3.9ms)[0m  UPDATE "movies" SET "poster_content_type" = ?, "poster_file_name" = ?, "poster_file_size" = ?, "poster_updated_at" = ?, "updated_at" = ? WHERE "movies"."id" = 1  [["poster_content_type", "image/jpeg"], ["poster_file_name", "avengers.jpg"], ["poster_file_size", 69524], ["poster_updated_at", "2015-07-22 02:02:04.132131"], ["updated_at", "2015-07-22 02:02:04.201521"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/1
+Completed 302 Found in 161ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/movies/1" for 10.0.2.2 at 2015-07-22 02:02:04 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (2.1ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.2ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mReview Load (2.1ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered movies/show.html.erb within layouts/application (172.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 555ms (Views: 536.1ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:04 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:05 +0000
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 02:02:11 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.8ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.9ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (21.3ms)
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 417ms (Views: 405.7ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/posters/original/missing.png" for 10.0.2.2 at 2015-07-22 02:02:11 +0000
+
+ActionController::RoutingError (No route matches [GET] "/posters/original/missing.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.3ms)
+
+
+Started GET "/movies/2" for 10.0.2.2 at 2015-07-22 02:02:14 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (1.2ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.9ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mReview Load (1.8ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered movies/show.html.erb within layouts/application (22.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 391ms (Views: 378.0ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/posters/original/missing.png" for 10.0.2.2 at 2015-07-22 02:02:14 +0000
+
+ActionController::RoutingError (No route matches [GET] "/posters/original/missing.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+
+
+Started GET "/movies/2/edit" for 10.0.2.2 at 2015-07-22 02:02:16 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (1.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered movies/_form.html.erb (5.0ms)
+  Rendered movies/edit.html.erb within layouts/application (32.8ms)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 413ms (Views: 408.1ms | ActiveRecord: 3.0ms)
+
+
+Started PATCH "/movies/2" for 10.0.2.2 at 2015-07-22 02:02:29 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RLltm2pPksuy3Lzufki5UC1llXWvG/xZLd3nbHk6hDo=", "movie"=>{"title"=>"Captain America The Winter Soldier", "release_date"=>"2014-04-04", "director"=>"Russo Brothers", "runtime_in_minutes"=>"136", "description"=>"Captain America, Black Widow, and Falcon join forces to uncover a conspiracy within S.H.I.E.L.D. while facing a mysterious assassin known as the Winter Soldier.", "poster"=>#<ActionDispatch::Http::UploadedFile:0xb65cbbb8 @tempfile=#<Tempfile:/tmp/RackMultipart20150722-7490-108mvub>, @original_filename="captain_america_the_winter_soldier_ver7.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"captain_america_the_winter_soldier_ver7.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit", "id"=>"2"}
+  [1m[35mMovie Load (2.2ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/tmp/99dd46f83c1abbfa9f87bca17b0e959f20150722-7490-1gluzet.jpg'
+Command :: file -b --mime '/tmp/99dd46f83c1abbfa9f87bca17b0e959f20150722-7490-dqb4b6.jpg'
+Binary data inserted for `string` type on column `poster_content_type`
+  [1m[35mSQL (4.4ms)[0m  UPDATE "movies" SET "poster_content_type" = ?, "poster_file_name" = ?, "poster_file_size" = ?, "poster_updated_at" = ?, "updated_at" = ? WHERE "movies"."id" = 2  [["poster_content_type", "image/jpeg"], ["poster_file_name", "captain_america_the_winter_soldier_ver7.jpg"], ["poster_file_size", 113310], ["poster_updated_at", "2015-07-22 02:02:29.158917"], ["updated_at", "2015-07-22 02:02:29.172846"]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/2
+Completed 302 Found in 69ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/movies/2" for 10.0.2.2 at 2015-07-22 02:02:29 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (1.8ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.6ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mReview Load (1.3ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered movies/show.html.erb within layouts/application (24.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 412ms (Views: 396.9ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:29 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:29 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:29 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:30 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 02:02:30 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:30 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:30 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:30 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:30 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:30 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 02:02:30 +0000
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 02:02:33 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.7ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.7ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (6.3ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.7ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (25.6ms)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 400ms (Views: 385.0ms | ActiveRecord: 14.6ms)
