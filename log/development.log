@@ -9221,3 +9221,1090 @@ Processing by MoviesController#index as HTML
   [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
   Rendered layouts/_footer.html.erb (2.7ms)
 Completed 200 OK in 475ms (Views: 464.2ms | ActiveRecord: 10.6ms)
+  [1m[36mUser Load (8.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:00:46 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (54.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 1125ms (Views: 996.3ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/admin/users/7/edit" for 10.0.2.2 at 2015-07-23 03:00:52 +0000
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/users/_form.html.erb (38.4ms)
+  Rendered admin/users/edit.html.erb within layouts/application (69.3ms)
+Completed 500 Internal Server Error in 154ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @movie, :html => {:multipart => true} do |f| %>
+    2:   <% if @movie.errors.any? %>
+    3:     <div>
+    4:       <%= pluralize(@movie.errors.count, "error") %> prevented this movie from being submitted:
+  app/views/admin/users/_form.html.erb:1:in `_app_views_admin_users__form_html_erb__770197778_99849720'
+  app/views/admin/users/edit.html.erb:2:in `_app_views_admin_users_edit_html_erb___374189869_99875300'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.0ms)
+
+
+Started GET "/admin/users/7/edit" for 10.0.2.2 at 2015-07-23 03:00:52 +0000
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (6.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/users/_form.html.erb (22.8ms)
+  Rendered admin/users/edit.html.erb within layouts/application (49.0ms)
+Completed 500 Internal Server Error in 124ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @movie, :html => {:multipart => true} do |f| %>
+    2:   <% if @movie.errors.any? %>
+    3:     <div>
+    4:       <%= pluralize(@movie.errors.count, "error") %> prevented this movie from being submitted:
+  app/views/admin/users/_form.html.erb:1:in `_app_views_admin_users__form_html_erb__770197778_98729750'
+  app/views/admin/users/edit.html.erb:2:in `_app_views_admin_users_edit_html_erb___374189869_98813100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.0ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:01:20 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 533ms (Views: 525.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/admin/users/7/edit" for 10.0.2.2 at 2015-07-23 03:01:25 +0000
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/users/_form.html.erb (63.5ms)
+  Rendered admin/users/edit.html.erb within layouts/application (97.2ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 601ms (Views: 594.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:05:45 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (58.5ms)
+Completed 500 Internal Server Error in 141ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_admin' for #<#<Class:0xbfb0c74>:0xb318200>):
+    5:   <%= user.firstname  %> | <%= user.lastname %> | <%= user.email %> | <%= link_to "edit" , edit_admin_user_path(user) %>
+    6: 
+    7:   </div>
+    8: <%= link_to "create user", new_user_admin %>
+    9: <% end %>
+  app/views/admin/users/index.html.erb:8:in `block in _app_views_admin_users_index_html_erb___31447510_93862500'
+  app/views/admin/users/index.html.erb:3:in `_app_views_admin_users_index_html_erb___31447510_93862500'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.2ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:05:57 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (2.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (70.6ms)
+Completed 500 Internal Server Error in 136ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_admin_path' for #<#<Class:0xbfb0c74>:0xa5d23fc>):
+    5:   <%= user.firstname  %> | <%= user.lastname %> | <%= user.email %> | <%= link_to "edit" , edit_admin_user_path(user) %>
+    6: 
+    7:   </div>
+    8: <%= link_to "create user", new_user_admin_path %>
+    9: <% end %>
+  app/views/admin/users/index.html.erb:8:in `block in _app_views_admin_users_index_html_erb___31447510_86934500'
+  app/views/admin/users/index.html.erb:3:in `_app_views_admin_users_index_html_erb___31447510_86934500'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:06:25 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 535ms (Views: 528.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:06:44 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (20.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 556ms (Views: 548.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/admin/users/new" for 10.0.2.2 at 2015-07-23 03:06:53 +0000
+Processing by Admin::UsersController#new as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered admin/users/_form.html.erb (2.8ms)
+  Rendered admin/users/new.html.erb within layouts/application (35.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 534ms (Views: 530.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:12:29 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (30.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 549ms (Views: 541.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:14:02 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (23.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 565ms (Views: 526.1ms | ActiveRecord: 12.9ms)
+
+
+Started DELETE "/admin/users/8" for 10.0.2.2 at 2015-07-23 03:14:07 +0000
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "id"=>"8"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.7ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 8]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 20ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:14:07 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 520ms (Views: 514.3ms | ActiveRecord: 4.1ms)
+
+
+Started DELETE "/admin/users/11" for 10.0.2.2 at 2015-07-23 03:14:14 +0000
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "id"=>"11"}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 11]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 17ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:14:14 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 537ms (Views: 531.5ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/admin/users/12" for 10.0.2.2 at 2015-07-23 03:14:17 +0000
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "id"=>"12"}
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 12]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 19ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:14:17 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (20.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 537ms (Views: 530.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/admin/users/new" for 10.0.2.2 at 2015-07-23 03:16:05 +0000
+Processing by Admin::UsersController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered admin/users/_form.html.erb (3.0ms)
+  Rendered admin/users/new.html.erb within layouts/application (49.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 553ms (Views: 548.6ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/admin/users" for 10.0.2.2 at 2015-07-23 03:16:23 +0000
+Processing by Admin::UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "user"=>{"email"=>"meteos@cloud9.gg", "firstname"=>"Will", "lastname"=>"Hartman", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "admin"=>"1"}, "commit"=>"Submit"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", "t"], ["created_at", "2015-07-23 03:16:23.971040"], ["email", "meteos@cloud9.gg"], ["firstname", "Will"], ["lastname", "Hartman"], ["password_digest", "$2a$10$nPuku.DUABfTKe.J/KW1BOzVWiSbs1Hh7wsKTXKa4f6ZISUhkgybq"], ["updated_at", "2015-07-23 03:16:23.971040"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 109ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:16:24 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.7ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.0ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.2ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (122.3ms)
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 620ms (Views: 586.9ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:16:43 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (21.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 532ms (Views: 526.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/admin/users/13/edit" for 10.0.2.2 at 2015-07-23 03:17:39 +0000
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered admin/users/_form.html.erb (3.7ms)
+  Rendered admin/users/edit.html.erb within layouts/application (33.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 535ms (Views: 528.4ms | ActiveRecord: 3.6ms)
+
+
+Started PATCH "/admin/users/13" for 10.0.2.2 at 2015-07-23 03:17:49 +0000
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "user"=>{"email"=>"meteos@cloud9.gg", "firstname"=>"William", "lastname"=>"Hartman", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "admin"=>"1"}, "commit"=>"Submit", "id"=>"13"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (10.7ms)[0m  UPDATE "users" SET "firstname" = ?, "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = 13  [["firstname", "William"], ["password_digest", "$2a$10$VeCX0mG9vAy.lmFYY.Tn2eZdCguOpM9LTWb8kr8MVDgIQxA1vYRhW"], ["updated_at", "2015-07-23 03:17:49.261410"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/users.13
+Completed 302 Found in 105ms (ActiveRecord: 18.3ms)
+
+
+Started GET "/admin/users.13" for 10.0.2.2 at 2015-07-23 03:17:49 +0000
+Processing by Admin::UsersController#index as 
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 898ms (Views: 891.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/admin/users.13" for 10.0.2.2 at 2015-07-23 03:18:35 +0000
+Processing by Admin::UsersController#index as 
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 940ms (Views: 929.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:18:40 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 512ms (Views: 504.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:18:51 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (3.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.7ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.6ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (58.8ms)
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_footer.html.erb (26.6ms)
+Completed 200 OK in 656ms (Views: 619.5ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:18:52 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.3ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.3ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (19.4ms)
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 541ms (Views: 531.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2015-07-23 03:19:01 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (40.8ms)
+  Rendered movies/new.html.erb within layouts/application (72.8ms)
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 557ms (Views: 554.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:19:24 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.1ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.6ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.9ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (21.8ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 524ms (Views: 512.3ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:19:33 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 519ms (Views: 512.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/admin/users/7/edit" for 10.0.2.2 at 2015-07-23 03:19:42 +0000
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/users/_form.html.erb (3.1ms)
+  Rendered admin/users/edit.html.erb within layouts/application (33.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 551ms (Views: 544.8ms | ActiveRecord: 3.2ms)
+  [1m[36mUser Load (7.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started DELETE "/sessions/current" for 10.0.2.2 at 2015-07-23 03:20:45 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "id"=>"current"}
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:20:45 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.9ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.7ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (2.6ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 522ms (Views: 511.6ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/sessions/new" for 10.0.2.2 at 2015-07-23 03:20:49 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 527ms (Views: 526.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 10.0.2.2 at 2015-07-23 03:20:55 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "email"=>"bjerg@tsm.gg", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'bjerg@tsm.gg' LIMIT 1
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 104ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:20:55 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.7ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.3ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (20.0ms)
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 542ms (Views: 531.7ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2015-07-23 03:21:24 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (2.4ms)
+  Rendered movies/new.html.erb within layouts/application (29.7ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 549ms (Views: 547.0ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-23 03:23:06 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "movie"=>{"title"=>"Captain America, Civil War", "release_date"=>"2016-05-06", "director"=>"Russo Brothers", "runtime_in_minutes"=>"210", "description"=>"Capt vs Stark", "poster"=>#<ActionDispatch::Http::UploadedFile:0xbc03fb8 @tempfile=#<Tempfile:/tmp/RackMultipart20150723-9062-lntd8s>, @original_filename="__captain_america__civil_war___teaser_poster_by_andrewss7-d85o072.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"__captain_america__civil_war___teaser_poster_by_andrewss7-d85o072.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/588e40a6aedaa9b4381f3a796859e8c220150723-9062-briomf.jpg'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/588e40a6aedaa9b4381f3a796859e8c220150723-9062-ojy9cp.jpg'
+Binary data inserted for `string` type on column `poster_content_type`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_content_type", "poster_file_name", "poster_file_size", "poster_updated_at", "release_date", "runtime_in_minutes", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-07-23 03:23:06.379314"], ["description", "Capt vs Stark"], ["director", "Russo Brothers"], ["poster_content_type", "image/jpeg"], ["poster_file_name", "__captain_america__civil_war___teaser_poster_by_andrewss7-d85o072.jpg"], ["poster_file_size", 646153], ["poster_updated_at", "2015-07-23 03:23:06.350870"], ["release_date", "2016-05-06 00:00:00.000000"], ["runtime_in_minutes", 210], ["title", "Captain America, Civil War"], ["updated_at", "2015-07-23 03:23:06.379314"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 85ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:23:06 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.9ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (2.0ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (2.1ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 3]]
+  Rendered movies/index.html.erb within layouts/application (26.1ms)
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 562ms (Views: 549.0ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/movies/3" for 10.0.2.2 at 2015-07-23 03:23:20 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mMovie Load (1.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered movies/show.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 517ms (Views: 509.6ms | ActiveRecord: 4.9ms)
+
+
+Started DELETE "/movies/3" for 10.0.2.2 at 2015-07-23 03:23:23 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "id"=>"3"}
+  [1m[36mMovie Load (1.7ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.5ms)[0m  [1mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 3]]
+  [1m[35m (4.4ms)[0m  commit transaction
+[paperclip] deleting /vagrant/w5d1/rotten_mangoes/public/system/movies/posters/000/000/003/original/__captain_america__civil_war___teaser_poster_by_andrewss7-d85o072.jpg
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 31ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:23:23 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.7ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.4ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (24.9ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 544ms (Views: 534.5ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2015-07-23 03:25:32 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (4.3ms)
+  Rendered movies/new.html.erb within layouts/application (33.7ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 563ms (Views: 560.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-23 03:26:34 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "movie"=>{"title"=>"The Dark Knight", "release_date"=>"2008-07-18", "director"=>"Christopher Nolan", "runtime_in_minutes"=>"152", "description"=>"Why so serious?", "poster"=>#<ActionDispatch::Http::UploadedFile:0xbd72610 @tempfile=#<Tempfile:/tmp/RackMultipart20150723-9062-1jzoplf>, @original_filename="dark_knight_ver5.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[poster]\"; filename=\"dark_knight_ver5.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit"}
+Command :: file -b --mime '/tmp/7865453b8a53c9339e0f04caf2d53e3c20150723-9062-bk61ld.jpg'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/7865453b8a53c9339e0f04caf2d53e3c20150723-9062-4b8g9v.jpg'
+Binary data inserted for `string` type on column `poster_content_type`
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_content_type", "poster_file_name", "poster_file_size", "poster_updated_at", "release_date", "runtime_in_minutes", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-07-23 03:26:34.558193"], ["description", "Why so serious?"], ["director", "Christopher Nolan"], ["poster_content_type", "image/jpeg"], ["poster_file_name", "dark_knight_ver5.jpg"], ["poster_file_size", 75560], ["poster_updated_at", "2015-07-23 03:26:34.543193"], ["release_date", "2008-07-18 00:00:00.000000"], ["runtime_in_minutes", 152], ["title", "The Dark Knight"], ["updated_at", "2015-07-23 03:26:34.558193"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 67ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:26:34 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (2.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.8ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.7ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (29.1ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 559ms (Views: 545.7ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/movies/4" for 10.0.2.2 at 2015-07-23 03:26:42 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mMovie Load (1.6ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered movies/show.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 496ms (Views: 489.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/movies/4/reviews/new" for 10.0.2.2 at 2015-07-23 03:26:44 +0000
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"4"}
+  [1m[36mMovie Load (1.6ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered reviews/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 540ms (Views: 507.7ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/movies/4/reviews" for 10.0.2.2 at 2015-07-23 03:27:24 +0000
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "review"=>{"text"=>"too goodddd!11!!1!!", "rating_out_of_ten"=>"10"}, "commit"=>"Submit", "movie_id"=>"4"}
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "reviews" ("created_at", "movie_id", "rating_out_of_ten", "text", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2015-07-23 03:27:24.209748"], ["movie_id", 4], ["rating_out_of_ten", 10], ["text", "too goodddd!11!!1!!"], ["updated_at", "2015-07-23 03:27:24.209748"], ["user_id", 7]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/4
+Completed 302 Found in 34ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/movies/4" for 10.0.2.2 at 2015-07-23 03:27:24 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mMovie Load (1.3ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (1.8ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mReview Load (1.6ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered movies/show.html.erb within layouts/application (20.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 548ms (Views: 535.5ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:27:30 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.8ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (7.5ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.6ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.6ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  [1m[36m (1.9ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (38.7ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 553ms (Views: 533.9ms | ActiveRecord: 18.5ms)
+
+
+Started DELETE "/sessions/current" for 10.0.2.2 at 2015-07-23 03:27:46 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "id"=>"current"}
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:27:46 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.5ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.0ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.3ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (1.8ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (29.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 548ms (Views: 535.1ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/sessions/new" for 10.0.2.2 at 2015-07-23 03:27:51 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 568ms (Views: 567.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 10.0.2.2 at 2015-07-23 03:27:58 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "email"=>"hai@cloud9.gg", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'hai@cloud9.gg' LIMIT 1
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 78ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:27:58 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.9ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (2.0ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  [1m[36m (2.0ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (29.2ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 540ms (Views: 525.3ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:28:59 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.0ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.9ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  [1m[35m (1.2ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (29.3ms)
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_footer.html.erb (4.9ms)
+Completed 200 OK in 554ms (Views: 538.6ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:29:24 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 623ms (Views: 589.4ms | ActiveRecord: 8.3ms)
+
+
+Started DELETE "/admin/users/7" for 10.0.2.2 at 2015-07-23 03:30:13 +0000
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "id"=>"7"}
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mReview Load (1.8ms)[0m  [1mSELECT "reviews".* FROM "reviews"  WHERE "reviews"."user_id" = ?[0m  [["user_id", 7]]
+  [1m[35mSQL (2.9ms)[0m  DELETE FROM "reviews" WHERE "reviews"."id" = ?  [["id", 5]]
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  [1m[35m (5.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 72ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:30:14 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 529ms (Views: 522.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:30:19 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.2ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.4ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (44.1ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 585ms (Views: 550.1ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:30:20 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.1ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.2ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (22.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 541ms (Views: 530.9ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:32:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.3ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.8ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.2ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (136.6ms)
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_footer.html.erb (76.8ms)
+Completed 200 OK in 1151ms (Views: 1061.9ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:32:44 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (27.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 542ms (Views: 534.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/admin/users/1/edit" for 10.0.2.2 at 2015-07-23 03:32:55 +0000
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/users/_form.html.erb (71.4ms)
+  Rendered admin/users/edit.html.erb within layouts/application (106.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 627ms (Views: 621.2ms | ActiveRecord: 2.9ms)
+
+
+Started PATCH "/admin/users/1" for 10.0.2.2 at 2015-07-23 03:33:01 +0000
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "user"=>{"email"=>"dyrus@tsm.gg", "firstname"=>"Marcus", "lastname"=>"Hill", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "admin"=>"1"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.6ms)[0m  [1mUPDATE "users" SET "admin" = ?, "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["admin", "t"], ["password_digest", "$2a$10$ZAllaoeHDdfDqcEd4JyRQuglzse9qugcn3AMN7YwmklqpLHlvd5MK"], ["updated_at", "2015-07-23 03:33:01.800386"]]
+  [1m[35m (4.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 102ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:33:01 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 540ms (Views: 534.3ms | ActiveRecord: 4.4ms)
+  [1m[36mUser Load (9.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:40:01 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.2ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (1.9ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.8ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (24.7ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 531ms (Views: 517.8ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:40:04 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.7ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.9ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (2.0ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 4]]
+  Rendered movies/index.html.erb within layouts/application (24.6ms)
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 548ms (Views: 535.6ms | ActiveRecord: 12.0ms)
+  [1m[36mMovie Load (9.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35mMovie Load (1.7ms)[0m  SELECT  "movies".* FROM "movies"  WHERE "movies"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 4]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /vagrant/w5d1/rotten_mangoes/public/system/movies/posters/000/000/004/original/dark_knight_ver5.jpg
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-23 03:42:20 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.4ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.7ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (20.9ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 505ms (Views: 493.3ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:42:31 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 512ms (Views: 505.5ms | ActiveRecord: 4.2ms)
+
+
+Started DELETE "/admin/users/5" for 10.0.2.2 at 2015-07-23 03:42:39 +0000
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "id"=>"5"}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (5.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mReview Load (1.4ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."user_id" = ?  [["user_id", 5]]
+  [1m[36mSQL (2.2ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[35m (3.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 36ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:42:39 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (19.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 510ms (Views: 504.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/admin/users/13/edit" for 10.0.2.2 at 2015-07-23 03:42:44 +0000
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered admin/users/_form.html.erb (2.5ms)
+  Rendered admin/users/edit.html.erb within layouts/application (36.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 523ms (Views: 518.0ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/admin/users/13" for 10.0.2.2 at 2015-07-23 03:42:54 +0000
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "user"=>{"email"=>"meteos@cloud9.gg", "firstname"=>"Will", "lastname"=>"Hartman", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "admin"=>"1"}, "commit"=>"Submit", "id"=>"13"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (12.2ms)[0m  [1mUPDATE "users" SET "firstname" = ?, "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = 13[0m  [["firstname", "Will"], ["password_digest", "$2a$10$z5HXVJ6zFk7ksG2fFnxwJullLRI226AiQ9WCph2vO8FOxQtd4lTQ2"], ["updated_at", "2015-07-23 03:42:54.891642"]]
+  [1m[35m (4.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 121ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:42:54 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 508ms (Views: 502.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/admin/users/1/edit" for 10.0.2.2 at 2015-07-23 03:42:58 +0000
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/users/_form.html.erb (3.1ms)
+  Rendered admin/users/edit.html.erb within layouts/application (32.5ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 518ms (Views: 512.4ms | ActiveRecord: 3.2ms)
+
+
+Started PATCH "/admin/users/1" for 10.0.2.2 at 2015-07-23 03:43:04 +0000
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVzkqevZfko7vnlT4wio2KiDsAMn/4/LScNJyhlkeWs=", "user"=>{"email"=>"dyrus@tsm.gg", "firstname"=>"Marcus", "lastname"=>"Hill", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "admin"=>"0"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.8ms)[0m  [1mUPDATE "users" SET "admin" = ?, "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["admin", "f"], ["password_digest", "$2a$10$9VZiIkriqehNpQ.nlaxiD.5wtgVI18tOfO7lYu.5Bgd1hf2gLGNEy"], ["updated_at", "2015-07-23 03:43:05.031204"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 107ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 03:43:05 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0[0m
+  Rendered admin/users/index.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 500ms (Views: 494.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/admin/users/13/edit" for 10.0.2.2 at 2015-07-23 04:12:36 +0000
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered admin/users/_form.html.erb (3.2ms)
+  Rendered admin/users/edit.html.erb within layouts/application (38.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 580ms (Views: 537.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/admin/users/13" for 10.0.2.2 at 2015-07-23 04:12:42 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for Admin::UsersController):
+  actionpack (4.1.6) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2015-07-23 04:12:45 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"   ORDER BY lastname LIMIT 25 OFFSET 0
+  Rendered admin/users/index.html.erb within layouts/application (20.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 546ms (Views: 539.8ms | ActiveRecord: 4.1ms)
