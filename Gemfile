@@ -31,6 +31,9 @@ gem 'bcrypt-ruby'
 
 gem 'paperclip'
 
+gem 'kaminari'
+gem 'quiet_assets'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
