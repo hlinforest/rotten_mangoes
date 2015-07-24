@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+
   def index
     @movies = Movie.all
     #title = params[:title]
@@ -13,13 +14,13 @@ class MoviesController < ApplicationController
       case params[:runtime_in_minutes]
         #binding.pry
       when "Between 90 and 120 minutes"
-        @movies = @movies.where('runtime_in_minutes between ? and ?', 90, 120)
+        @movies = @movies.between_90_to_120
         # return "BETWEEN 90 and 120"
       when "Under 90 minutes"
-        @movies = @movies.where('runtime_in_minutes < ?', 90)
+        @movies = @movies.less_than_90
         # return "< 90"
       when "Over 120 minutes"
-        @movies = @movies.where('runtime_in_minutes > ?', 120)
+        @movies = @movies.greater_than_120
         # return "> 120"
       end
 
