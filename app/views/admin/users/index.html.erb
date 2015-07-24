@@ -2,7 +2,7 @@
 <%= paginate @users %>
 <% @users.each do |user| %>
   <div class = "user">
-  <%= user.firstname  %> | <%= user.lastname %> | <%= user.email %> | <%= link_to "edit" , edit_admin_user_path(user) %> | <%= link_to "delete", admin_user_path(user), method: :delete %> 
+  <%= user.firstname  %> | <%= user.lastname %> | <%= user.email %> | <%= link_to "edit" , edit_admin_user_path(user) %> | <%= link_to "delete", admin_user_path(user), method: :delete %> | <%= link_to "view as" %>
 
   </div>
 <% end %>

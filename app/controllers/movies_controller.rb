@@ -1,6 +1,32 @@
 class MoviesController < ApplicationController
   def index
     @movies = Movie.all
+    #title = params[:title]
+    #director = params[:director]
+    # duration = get_runtime(params[:runtime_in_minutes])
+    # temp1 = duration.to_i
+    # binding.pry
+    if params[:title] && params[:director]
+      #@movies.where("title LIKE ? AND director LIKE ?", "%" + title + "%", "%" + director + "%")
+      @movies = @movies.where("title LIKE ? AND director LIKE ?", "%#{params[:title]}%", "%#{params[:director]}%")
+
+      case params[:runtime_in_minutes]
+        #binding.pry
+      when "Between 90 and 120 minutes"
+        @movies = @movies.where('runtime_in_minutes between ? and ?', 90, 120)
+        # return "BETWEEN 90 and 120"
+      when "Under 90 minutes"
+        @movies = @movies.where('runtime_in_minutes < ?', 90)
+        # return "< 90"
+      when "Over 120 minutes"
+        @movies = @movies.where('runtime_in_minutes > ?', 120)
+        # return "> 120"
+      end
+
+      # @movies = @movies.where("title LIKE ? AND director LIKE ? AND runtime_in_minutes #{duration}", title, director)
+    end
+
+
   end
 
   def show
@@ -41,6 +67,10 @@ class MoviesController < ApplicationController
     @movie.destroy
     redirect_to movies_path
   end
+
+
+
+  
 
   protected
 
