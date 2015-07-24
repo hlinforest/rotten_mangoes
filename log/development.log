@@ -13560,3 +13560,151 @@ Processing by MoviesController#index as HTML
   [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
   Rendered layouts/_footer.html.erb (3.0ms)
 Completed 200 OK in 620ms (Views: 611.4ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-24 20:09:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/vagrant/w5d1/rotten_mangoes/app/controllers/movies_controller.rb:2: syntax error, unexpected tINTEGER, expecting ')'
+  scope :less_than_90, ->(90){ where('runtime_in_minutes < ?', 90)}
+                            ^
+/vagrant/w5d1/rotten_mangoes/app/controllers/movies_controller.rb:2: syntax error, unexpected '}', expecting keyword_end
+/vagrant/w5d1/rotten_mangoes/app/controllers/movies_controller.rb:3: syntax error, unexpected tINTEGER, expecting ')'
+...scope :between_90_to_120, ->(90,120){where('runtime_in_minut...
+...                               ^
+/vagrant/w5d1/rotten_mangoes/app/controllers/movies_controller.rb:3: syntax error, unexpected '}', expecting keyword_end
+/vagrant/w5d1/rotten_mangoes/app/controllers/movies_controller.rb:4: syntax error, unexpected ->, expecting keyword_end
+  scope :greater_than_120 ->(120){where('runtime_in_minut...
+                            ^
+/vagrant/w5d1/rotten_mangoes/app/controllers/movies_controller.rb:4: syntax error, unexpected '}', expecting keyword_end):
+  app/controllers/movies_controller.rb:2: syntax error, unexpected tINTEGER, expecting ')'
+  app/controllers/movies_controller.rb:2: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/movies_controller.rb:3: syntax error, unexpected tINTEGER, expecting ')'
+  app/controllers/movies_controller.rb:3: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/movies_controller.rb:4: syntax error, unexpected ->, expecting keyword_end
+  app/controllers/movies_controller.rb:4: syntax error, unexpected '}', expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (27.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-24 20:21:49 +0000
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 19ms
+
+SyntaxError (/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:3: syntax error, unexpected tINTEGER, expecting ')'
+  scope :less_than_90, ->(90){ where('runtime_in_minutes < ?', 90)}
+                            ^
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:3: syntax error, unexpected '}', expecting keyword_end
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:4: syntax error, unexpected tINTEGER, expecting ')'
+...scope :between_90_to_120, ->(90,120){where('runtime_in_minut...
+...                               ^
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:4: syntax error, unexpected '}', expecting keyword_end
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:5: syntax error, unexpected ->, expecting keyword_end
+  scope :greater_than_120 ->(120){where('runtime_in_minut...
+                            ^
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:5: syntax error, unexpected '}', expecting keyword_end):
+  app/models/movie.rb:3: syntax error, unexpected tINTEGER, expecting ')'
+  app/models/movie.rb:3: syntax error, unexpected '}', expecting keyword_end
+  app/models/movie.rb:4: syntax error, unexpected tINTEGER, expecting ')'
+  app/models/movie.rb:4: syntax error, unexpected '}', expecting keyword_end
+  app/models/movie.rb:5: syntax error, unexpected ->, expecting keyword_end
+  app/models/movie.rb:5: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/movies_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-24 20:22:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 57ms
+
+SyntaxError (/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:3: syntax error, unexpected tINTEGER, expecting ')'
+  scope :less_than_90, ->(90){ where('runtime_in_minutes < ?', 90)}
+                            ^
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:3: syntax error, unexpected '}', expecting keyword_end
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:4: syntax error, unexpected tINTEGER, expecting ')'
+...scope :between_90_to_120, ->(90,120){where('runtime_in_minut...
+...                               ^
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:4: syntax error, unexpected '}', expecting keyword_end
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:5: syntax error, unexpected ->, expecting keyword_end
+  scope :greater_than_120 ->(120){where('runtime_in_minut...
+                            ^
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:5: syntax error, unexpected '}', expecting keyword_end):
+  app/models/movie.rb:3: syntax error, unexpected tINTEGER, expecting ')'
+  app/models/movie.rb:3: syntax error, unexpected '}', expecting keyword_end
+  app/models/movie.rb:4: syntax error, unexpected tINTEGER, expecting ')'
+  app/models/movie.rb:4: syntax error, unexpected '}', expecting keyword_end
+  app/models/movie.rb:5: syntax error, unexpected ->, expecting keyword_end
+  app/models/movie.rb:5: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/movies_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-24 20:22:36 +0000
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 22ms
+
+SyntaxError (/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:3: syntax error, unexpected tINTEGER, expecting ')'
+  scope :less_than_90, ->(90){ where('runtime_in_minutes < ?', 90)}
+                            ^
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:3: syntax error, unexpected '}', expecting keyword_end
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:4: syntax error, unexpected tINTEGER, expecting ')'
+...scope :between_90_to_120, ->(90,120){where('runtime_in_minut...
+...                               ^
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:4: syntax error, unexpected '}', expecting keyword_end
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:5: syntax error, unexpected tINTEGER, expecting ')'
+...scope :greater_than_120, ->(120){where('runtime_in_minutes >...
+...                               ^
+/vagrant/w5d1/rotten_mangoes/app/models/movie.rb:5: syntax error, unexpected '}', expecting keyword_end):
+  app/models/movie.rb:3: syntax error, unexpected tINTEGER, expecting ')'
+  app/models/movie.rb:3: syntax error, unexpected '}', expecting keyword_end
+  app/models/movie.rb:4: syntax error, unexpected tINTEGER, expecting ')'
+  app/models/movie.rb:4: syntax error, unexpected '}', expecting keyword_end
+  app/models/movie.rb:5: syntax error, unexpected tINTEGER, expecting ')'
+  app/models/movie.rb:5: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/movies_controller.rb:4:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-24 20:25:54 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.7ms)[0m  SELECT "movies".* FROM "movies"
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  [1m[36m (1.9ms)[0m  [1mSELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews"  WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "reviews"  WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  Rendered movies/index.html.erb within layouts/application (125.8ms)
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_footer.html.erb (90.9ms)
+Completed 200 OK in 1252ms (Views: 1195.1ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&title=Avengers&director=Joss&runtime_in_minutes=Under+90+minutes&commit=Search" for 10.0.2.2 at 2015-07-24 20:26:06 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"Avengers", "director"=>"Joss", "runtime_in_minutes"=>"Under 90 minutes", "commit"=>"Search"}
+  [1m[35mMovie Load (2.0ms)[0m  SELECT "movies".* FROM "movies"  WHERE (title LIKE '%Avengers%' AND director LIKE '%Joss%') AND (runtime_in_minutes < 90)
+  Rendered movies/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 575ms (Views: 570.6ms | ActiveRecord: 3.2ms)

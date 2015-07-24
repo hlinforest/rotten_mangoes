@@ -1,4 +1,9 @@
 class Movie < ActiveRecord::Base
+
+  scope :less_than_90, -> { where('runtime_in_minutes < ?', 90)}
+  scope :between_90_to_120, -> {where('runtime_in_minutes between ? and ?', 90, 120)}
+  scope :greater_than_120, -> {where('runtime_in_minutes > ?', 120)}
+
   has_many :reviews
 
   has_attached_file :poster
